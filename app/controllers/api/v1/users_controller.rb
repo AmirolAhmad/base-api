@@ -39,7 +39,7 @@ module Api
       end
 
       def correct_secret_api_key?
-        if request.headers['Authorization'] == ENV['SECRET_API_KEY']
+        if request.headers['Authorization'] = ENV['SECRET_API_KEY']
           true
         else
           head :unauthorized
